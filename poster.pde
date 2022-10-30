@@ -8,12 +8,6 @@ This sketch takes a still image from a video and your name.
  Googe Custom Search:
  https://developers.google.com/custom-search
  
- Key:
- AIzaSyA6qGlgjFOpuo1IQLMGjWYyVNoCFa01Wuc
- 
- Context:
- 96192268198954011
- 
  Spaces between search terms are encoded as %20
  
  **VIDEO**
@@ -25,8 +19,8 @@ This sketch takes a still image from a video and your name.
  
  
  **TODOs**
- - link the words to the image
-  
+ - generate a string array of words and then link the words to the image
+ 
  nice to haves:
  - improve google search by underdstanding search paramaters
  - improve image processing to alter image
@@ -43,7 +37,7 @@ PImage img;
 PFont f;
 String typing = "";
 String [] json;
-String text_result = "";
+String search_result = "";
 boolean enter_pressed = false;
 
 void setup() {
@@ -79,15 +73,15 @@ void draw() {
 
 void createImage() {
 
-  /******* Set option value to generate different image types:
+  /******* Set image_option value to generate different image types:
    option = 1: posterize filter
    option = 2: greyscale dots
-   option = 3: words from google search results sized in proportion to greyscale 
+   option = 3: words from google search results sized in proportion to greyscale
    
    int sample changes the sampling size of the pixels
    *******/
 
-  int option = 2;
+  int image_option = 3;
   int sample = 5;
 
   img = video;
@@ -104,7 +98,7 @@ void createImage() {
   float scaleX = w/img_w;
   float scaleY = h/img_h;
 
-  switch (option) {
+  switch (image_option) {
 
   case 1:
     img.resize(width, 0);
@@ -131,29 +125,37 @@ void createImage() {
     break;
 
   case 3 :
-    for (int x = sample; x < img.width; x+=sample) {
-      for (int y = sample; y < img.height; y+=sample) {
+    int character_count = 0;
+    textAlign(CENTER);
+    noStroke();
+
+    for (int y = sample; y < img.height; y+=sample) {
+      for (int x = sample; x < img.width; x+=sample) {
 
         //adjust the scale of the drawn image to fit the window
         float coordX = x * scaleX;
         float coordY = y * scaleY;
 
         img.loadPixels();
+
         var c = color(img.get(x, y));
+        fill(c);
+
+        //greyscale is a number between 0 and 255
         var greyScale = round(red(c)*0.222 + green(c)*.707 + blue(c)*0.071);
-        fill(greyScale);
-        noStroke();
-        
-        
-       // text_result;
+        //fill(greyScale);
+
+        float adjust = (greyScale - 127)/30;
+        textSize((2*sample) - adjust);
+
+        if (character_count < search_result.length()) {
+          text(search_result.charAt(character_count), coordX, coordY);
+        }
+        character_count++;
       }
     }
-
-
-
     break;
   }
-
   noLoop();
 }
 
@@ -180,13 +182,26 @@ void keyPressed() {
       println("default to stored json string - TODO");
     } else {
 
+
+      //try 1
+
       for (String s : json) {
-        text_result = text_result + s;
-        text_result = text_result.replaceAll(" ", "");
+        search_result = search_result + s;
       }
 
-      println(text_result);
-      println(text_result.length());
+      search_result = search_result.replaceAll(" ", "");
+
+      //try 2
+      //for (String s : json) {
+      //  s = s.replaceAll("  ", "");
+      //  s = s.replaceAll("\\{", "");
+      //  s = s.replaceAll("\\}", "");
+      //  s = s.replaceAll("\\[", "");
+      //  s = s.replaceAll("\\]", "");
+      //  s = s.replaceAll("\\\"", "");
+      //  s = s.replaceAll("og:", "");
+      //  search_result = search_result + s.replaceAll("  ", "");
+      //}
     }
   } else if (key == DELETE || key == BACKSPACE ) {
     if ( !(typing.length() == 0)) {
