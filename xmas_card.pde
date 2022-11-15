@@ -1,28 +1,7 @@
-/*
-This sketch converts a still image to a google search footprint image
- It creates a new image drawn using the characters returned from a google search of your name.
- 
-
- 
- **GOOGLE CUSTOM SEARCH**
- Googe Custom Search:
- https://developers.google.com/custom-search
- Spaces between search terms are encoded as %20
- 
- **VIDEO**
- https://github.com/processing/processing-video/issues/199
- width and height must correspond to the camera
- - 640 x 480 - works
- - 1280 x 960 - doesnt work
- - 1920 x 1080 - works and gives the best resolution for this mac
- 
- */
-
 
 PImage img;
 PFont f;
 String typing = "";
-//String [] json;
 JSONObject json;
 String search_result = "";
 boolean enter_pressed = false;
@@ -70,11 +49,9 @@ void createImage() {
    midpoint of greyscale which is 127
    */
 
-
   int sample = 8;
   float base_text_size = 1.5 * sample;
   float text_size_modulation_factor = 50;
-
 
   //white background
   fill(255);
