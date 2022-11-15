@@ -1,13 +1,12 @@
 /*
-This sketch takes a still image from a video and your name.
+This sketch converts a still image to a google search footprint image
  It creates a new image drawn using the characters returned from a google search of your name.
  
- NOTES:
+
  
  **GOOGLE CUSTOM SEARCH**
  Googe Custom Search:
  https://developers.google.com/custom-search
- 
  Spaces between search terms are encoded as %20
  
  **VIDEO**
@@ -17,55 +16,35 @@ This sketch takes a still image from a video and your name.
  - 1280 x 960 - doesnt work
  - 1920 x 1080 - works and gives the best resolution for this mac
  
- 
- **TODOs**
- - generate a string array of words and then link the words to the image
- 
- nice to haves:
- - improve google search by underdstanding search paramaters
- - improve image processing to alter image
- 
  */
 
-import processing.video.*;
 
-//video variables
-Capture video;
 PImage img;
-
-//Search Strings
 PFont f;
 String typing = "";
-String [] json;
+//String [] json;
+JSONObject json;
 String search_result = "";
 boolean enter_pressed = false;
 
 void setup() {
-  size(1000, 750);
+
+  size(1000, 667);
+  img = loadImage("reindeer.jpg");
+  image(img, 0, 0);
   f = createFont("Helvetica Neue", 22);
   textFont(f);
-  fill(250);
-
-  video = new Capture(this, "pipeline:avfvideosrc device-index=0 ! video/x-raw, width=1920, height=1080, framerate=30/1");
-  video.start();
 }
 
 void draw() {
 
   if (enter_pressed) {
-
     createImage();
   } else {
-
-    if (video.available()) {
-      video.read();
-      image(video, 0, 0, width, height);
-    }
-
     fill(0);
     rect(0, height - 70, width, height);
     fill(255);
-    text("Set your pose and type your name. Press enter to start:", 10, height - 30);
+    text("Type name and press enter to start:", 10, height - 30);
     text(typing, (width/2) + 75, height - 30);
   }
 }
@@ -82,11 +61,22 @@ void createImage() {
    *******/
 
   int image_option = 3;
-  int sample = 5;
 
-  img = video;
+  /* Tuning the image:
+   - sample: the number of pixels between each sampled pixels
+   - base_text_size: the base text size in pixels
+   - text size modulation factor: set to 1 and the text size is constant. Its just the color which varies.
+   text size modulation is taken from the greyscale average of the colour. The text size is shrunk and enlarged around the base text size depending on the departure from the
+   midpoint of greyscale which is 127
+   */
 
-  //white rectangle background
+
+  int sample = 8;
+  float base_text_size = 1.5 * sample;
+  float text_size_modulation_factor = 50;
+
+
+  //white background
   fill(255);
   rect(0, 0, width, height);
 
@@ -145,13 +135,15 @@ void createImage() {
         var greyScale = round(red(c)*0.222 + green(c)*.707 + blue(c)*0.071);
         //fill(greyScale);
 
-        float adjust = (greyScale - 127)/30;
-        textSize((2*sample) - adjust);
+        float size_adjust = (greyScale - 127)/text_size_modulation_factor;
+        textSize((base_text_size - size_adjust));
 
         if (character_count < search_result.length()) {
           text(search_result.charAt(character_count), coordX, coordY);
+          character_count++;
+        } else {
+          character_count = 0;
         }
-        character_count++;
       }
     }
     break;
@@ -171,8 +163,37 @@ void keyPressed() {
     String search_url = "https://www.googleapis.com/customsearch/v1?key=AIzaSyA6qGlgjFOpuo1IQLMGjWYyVNoCFa01Wuc&cx=96192268198954011&q=" + search_term;
 
     try {
-      json = loadStrings(search_url);
+      json = loadJSONObject(search_url);
+      saveJSONObject(json, "json_data.json");
+      //println(json.keys());
+      JSONArray items = json.getJSONArray("items");
+
+      for (int i = 0; i < items.size(); i++) {
+        JSONObject item = items.getJSONObject(i);
+
+        searchResult(item.getString("link"));
+        searchResult(item.getString("htmlSnippet"));
+        searchResult(item.getString("snippet"));
+        searchResult(item.getString("htmlFormattedUrl"));
+        searchResult(item.getString("htmlTitle"));
+
+        JSONObject pagemap = item.getJSONObject("pagemap");
+        //println(pagemap.keys());
+        JSONArray metatags = pagemap.getJSONArray("metatags");
+
+        for (int j = 0; j < metatags.size(); j++) {
+          JSONObject metatag = metatags.getJSONObject(j);
+          searchResult(metatag.getString("p:domain_verify "));
+          searchResult(metatag.getString("og:image"));
+          searchResult(metatag.getString("og:type"));
+          searchResult(metatag.getString("og:title"));
+          searchResult(metatag.getString("og:description"));
+          searchResult(metatag.getString("twitter:title"));
+          searchResult(metatag.getString("twitter:description"));
+        }
+      }
     }
+
     catch (Exception e) {
       e.printStackTrace();
       json = null;
@@ -180,28 +201,6 @@ void keyPressed() {
 
     if (json == null) {
       println("default to stored json string - TODO");
-    } else {
-
-
-      //try 1
-
-      for (String s : json) {
-        search_result = search_result + s;
-      }
-
-      search_result = search_result.replaceAll(" ", "");
-
-      //try 2
-      //for (String s : json) {
-      //  s = s.replaceAll("  ", "");
-      //  s = s.replaceAll("\\{", "");
-      //  s = s.replaceAll("\\}", "");
-      //  s = s.replaceAll("\\[", "");
-      //  s = s.replaceAll("\\]", "");
-      //  s = s.replaceAll("\\\"", "");
-      //  s = s.replaceAll("og:", "");
-      //  search_result = search_result + s.replaceAll("  ", "");
-      //}
     }
   } else if (key == DELETE || key == BACKSPACE ) {
     if ( !(typing.length() == 0)) {
@@ -213,5 +212,13 @@ void keyPressed() {
     } else if (keyCode == 32) {
       typing = typing + key;
     }
+  }
+}
+
+void searchResult(String s) {
+
+  if (!(s == null)) {
+    s = s.replaceAll("  ", "");
+    search_result = search_result + s;
   }
 }

@@ -1,0 +1,373 @@
+{
+  "kind": "customsearch#search",
+  "context": {"title": "CreativeCode"},
+  "queries": {
+    "request": [{
+      "inputEncoding": "utf8",
+      "totalResults": "3860000000",
+      "startIndex": 1,
+      "outputEncoding": "utf8",
+      "searchTerms": "santa",
+      "cx": "96192268198954011",
+      "count": 10,
+      "safe": "off",
+      "title": "Google Custom Search - santa"
+    }],
+    "nextPage": [{
+      "inputEncoding": "utf8",
+      "totalResults": "3860000000",
+      "startIndex": 11,
+      "outputEncoding": "utf8",
+      "searchTerms": "santa",
+      "cx": "96192268198954011",
+      "count": 10,
+      "safe": "off",
+      "title": "Google Custom Search - santa"
+    }]
+  },
+  "searchInformation": {
+    "searchTime": 0.502075,
+    "totalResults": "3860000000",
+    "formattedTotalResults": "3,860,000,000",
+    "formattedSearchTime": "0.50"
+  },
+  "items": [
+    {
+      "snippet": "Explore, play and learn with Santa's elves all December long.",
+      "htmlFormattedUrl": "https://<b>santa<\/b>tracker.google.com/",
+      "htmlTitle": "Google <b>Santa<\/b> Tracker",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "thumbnail": [{"src": "https://santatracker.google.com/images/og.png"}],
+        "metatags": [{
+          "og:type": "website",
+          "thumbnail": "https://santatracker.google.com/images/og.png",
+          "og:image:width": "1333",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Google Santa Tracker",
+          "twitter:site": "@google",
+          "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+          "twitter:description": "Explore, play and learn with Santa's elves all December long",
+          "og:title": "Google Santa Tracker",
+          "og:image:height": "1000",
+          "twitter:image": "https://santatracker.google.com/images/og.png"
+        }],
+        "cse_image": [{
+          "src": "https://santatracker.google.com/images/og.png",
+          "width": "259",
+          "type": "1",
+          "height": "194"
+        }]
+      },
+      "displayLink": "santatracker.google.com",
+      "link": "https://santatracker.google.com/",
+      "htmlSnippet": "Explore, play and learn with <b>Santa&#39;s<\/b> elves all December long.",
+      "title": "Google Santa Tracker",
+      "formattedUrl": "https://santatracker.google.com/",
+      "cacheId": "P5srYqg-TyMJ"
+    },
+    {
+      "snippet": "For over 60 years, NORAD and its predecessor, the Continental Air Defense Command (CONAD) have tracked Santa's flight. Follow Santa as he makes his magical ...",
+      "htmlFormattedUrl": "https://www.norad<b>santa<\/b>.org/",
+      "htmlTitle": "Official NORAD Tracks <b>Santa<\/b>",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2fgCp30CwqcICwb2NjpZdCW2DkEYlnpc8nYJE1OwJHnXHG2ngGRCw7s",
+          "width": "225",
+          "height": "225"
+        }],
+        "metatags": [{
+          "application-name": "NORAD Tracks Santa",
+          "web-speech-cognitive-services": "version=7.1.1",
+          "og:image": "http://www.noradsanta.org/images/static/NTS_Logo_with_Border.png",
+          "botframework-webchat:bundle:variant": "full",
+          "og:title": "Official NORAD Santa Tracker",
+          "og:description": "Follow Santa Claus as he makes his magical journey around the world!",
+          "msapplication-id": "NORADPublicAffairs.NORADTracksSanta",
+          "botframework-webchat:core:version": "4.15.4",
+          "botframework-webchat:bundle:version": "4.15.4",
+          "botframework-directlinespeech:version": "4.15.4",
+          "botframework-webchat:ui:version": "4.15.4",
+          "msapplication-packagefamilyname": "NORADPublicAffairs.NORADTracksSanta_bzcj0d5cg39gj",
+          "viewport": "width=device-width, initial-scale=1",
+          "msapplication-cortanavcd": "/script/vcd.xml",
+          "react-film": "version=3.1.0",
+          "react-scroll-to-bottom:version": "4.2.0",
+          "dcsdir.clearvars": "WT.z_clear"
+        }],
+        "cse_image": [{"src": "https://www.noradsanta.org/en/assets/images/noradHq/icon-phone.svg"}]
+      },
+      "displayLink": "www.noradsanta.org",
+      "link": "https://www.noradsanta.org/",
+      "htmlSnippet": "For over 60 years, NORAD and its predecessor, the Continental Air Defense Command (CONAD) have tracked <b>Santa&#39;s<\/b> flight. Follow <b>Santa<\/b> as he makes his magical&nbsp;...",
+      "title": "Official NORAD Tracks Santa",
+      "formattedUrl": "https://www.noradsanta.org/",
+      "cacheId": "V3mkjAuG4-wJ"
+    },
+    {
+      "snippet": "Santa Claus, also known as Father Christmas, Saint Nicholas, Saint Nick, Kris Kringle, or simply Santa, is a legendary character originating in Western ...",
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Santa<\/b>_Claus",
+      "htmlTitle": "<b>Santa<\/b> Claus - Wikipedia",
+      "kind": "customsearch#result",
+      "pagemap": {"metatags": [{
+        "referrer": "origin",
+        "og:image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/1200px-Jonathan_G_Meath_portrays_Santa_Claus.jpg",
+        "theme-color": "#eaecf0",
+        "og:image:width": "1200",
+        "og:type": "website",
+        "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+        "og:title": "Santa Claus - Wikipedia",
+        "og:image:height": "1679",
+        "format-detection": "telephone=no"
+      }]},
+      "displayLink": "en.wikipedia.org",
+      "link": "https://en.wikipedia.org/wiki/Santa_Claus",
+      "htmlSnippet": "<b>Santa<\/b> Claus, also known as Father Christmas, Saint Nicholas, Saint Nick, Kris Kringle, or simply <b>Santa<\/b>, is a legendary character originating in Western&nbsp;...",
+      "title": "Santa Claus - Wikipedia",
+      "formattedUrl": "https://en.wikipedia.org/wiki/Santa_Claus",
+      "cacheId": "7ZK7J7PG5n0J"
+    },
+    {
+      "snippet": "Explore, play and learn with Santa's elves all December long.",
+      "htmlFormattedUrl": "https://<b>santa<\/b>tracker.google.com/village.html",
+      "htmlTitle": "<b>Santa&#39;s<\/b> Village",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "thumbnail": [{"src": "https://santatracker.google.com/images/og/village.png"}],
+        "metatags": [{
+          "og:type": "website",
+          "thumbnail": "https://santatracker.google.com/images/og/village.png",
+          "og:image:width": "1333",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Santa's Village",
+          "twitter:site": "@google",
+          "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+          "twitter:description": "Explore, play and learn with Santa's elves all December long",
+          "og:title": "Santa's Village",
+          "og:image:height": "1000",
+          "twitter:image": "https://santatracker.google.com/images/og/village.png"
+        }],
+        "cse_image": [{
+          "src": "https://santatracker.google.com/images/og/village.png",
+          "width": "310",
+          "type": "1",
+          "height": "163"
+        }]
+      },
+      "displayLink": "santatracker.google.com",
+      "link": "https://santatracker.google.com/village.html",
+      "htmlSnippet": "Explore, play and learn with <b>Santa&#39;s<\/b> elves all December long.",
+      "title": "Santa's Village",
+      "formattedUrl": "https://santatracker.google.com/village.html",
+      "cacheId": "3KomELPo6G8J"
+    },
+    {
+      "snippet": "California's #1 transfer college for 30 years. Tops in transfers to UC, USC, and LMU. A world-class education and endless possibilities.",
+      "htmlFormattedUrl": "https://www.smc.edu/",
+      "htmlTitle": "<b>Santa<\/b> Monica College",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS99P8ANz__CsGFaO50CC2dPpKSsXYVdbR3BsDZpsAlqg",
+          "width": "260",
+          "height": "194"
+        }],
+        "metatags": [{
+          "og:image": "https://www.smc.edu",
+          "twitter:title": "Santa Monica College (@SMC_edu) · Twitter",
+          "twitter:card": "summary_large_image",
+          "twitter:url": "https://www.smc.edu/index.php",
+          "og:title": "Santa Monica College",
+          "og:updated_time": "2022-11-12T11:21:36.512383-08:00",
+          "og:description": "California's #1 transfer college for 30 years. Tops in transfers to UC, USC, and LMU. A world-class education and endless possibilities.",
+          "twitter:image": "https://www.smc.edu/administration/marketing/images/SMClogoRxblue10-Twitter-Card.png",
+          "facebook-domain-verification": "be170sjddae9zhmrkxnqneh2i9miw3",
+          "twitter:site": "@smc_edu",
+          "viewport": "width=device-width, initial-scale=1",
+          "twitter:description": "Follow @SMC_edu on Twitter to get the latest updates on Santa Monica College.",
+          "og:url": "https://www.smc.edu/index.php"
+        }],
+        "cse_image": [{}]
+      },
+      "displayLink": "www.smc.edu",
+      "link": "https://www.smc.edu/",
+      "htmlSnippet": "California&#39;s #1 transfer college for 30 years. Tops in transfers to UC, USC, and LMU. A world-class education and endless possibilities.",
+      "title": "Santa Monica College",
+      "formattedUrl": "https://www.smc.edu/",
+      "cacheId": "aNMA515h61kJ"
+    },
+    {
+      "snippet": "Official guide for visitors to Santa Monica, California. Information on why to visit, where to stay, hotels, restaurants and things to do, Santa Monica, CA.",
+      "htmlFormattedUrl": "https://www.<b>santa<\/b>monica.com/",
+      "htmlTitle": "<b>Santa<\/b> Monica CA | Visitor Information, Hotels, Dining",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQu-QRoqVGfXr-_dpUZkpWNVDoBbxpJry0VBnmObr_Cfn0JN2xET_yrHT",
+          "width": "283",
+          "height": "178"
+        }],
+        "metatags": [{
+          "og:image": "https://www.santamonica.com/wp-content/uploads/2022/05/visit-santa-monica.jpg",
+          "og:type": "website",
+          "og:image:width": "1152",
+          "og:site_name": "Visit Santa Monica",
+          "msvalidate.01": "177B70467ABD19F4C5023B9FFDB2FF8B",
+          "tec-api-origin": "https://www.santamonica.com",
+          "og:title": "Santa Monica CA | Visitor Information, Hotels, Dining",
+          "og:image:height": "727",
+          "og:image:type": "image/jpeg",
+          "yandex-verification": "37b06dc63344a233",
+          "msapplication-tileimage": "https://www.santamonica.com/wp-content/uploads/2022/10/SMTT-Favicon.png",
+          "og:description": "Official guide for visitors to Santa Monica, California. Information on why to visit, where to stay, hotels, restaurants and things to do, Santa Monica, CA.",
+          "article:publisher": "http://www.facebook.com/visitsantamonica",
+          "article:modified_time": "2022-09-26T18:12:25+00:00",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og:locale": "en_US",
+          "og:url": "https://www.santamonica.com/home-page/",
+          "tec-api-version": "v1"
+        }],
+        "cse_image": [{"src": "https://www.santamonica.com/wp-content/uploads/2022/05/visit-santa-monica.jpg"}]
+      },
+      "displayLink": "www.santamonica.com",
+      "link": "https://www.santamonica.com/",
+      "htmlSnippet": "Official guide for visitors to <b>Santa<\/b> Monica, California. Information on why to visit, where to stay, hotels, restaurants and things to do, <b>Santa<\/b> Monica, CA.",
+      "title": "Santa Monica CA | Visitor Information, Hotels, Dining",
+      "formattedUrl": "https://www.santamonica.com/",
+      "cacheId": "PpveJC8JuusJ"
+    },
+    {
+      "snippet": "Adopt a child's letter to Santa this holiday season with USPS Operation Santa®. Spread holiday cheer and help make a child's holiday wish come true.",
+      "htmlFormattedUrl": "https://www.uspsoperation<b>santa<\/b>.com/",
+      "htmlTitle": "USPS Operation <b>Santa<\/b>® | USPS",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQhUOgueG9Sso-KwglW7YTdq4Q7AsY8Zh6gd07NS9J47F42S5miGl4nQhq",
+          "width": "310",
+          "height": "163"
+        }],
+        "metatags": [{
+          "og:image": "https://www.uspsoperationsanta.com/images/OpSanta_2019_Facebook_SharedLink.png",
+          "og:type": "Website",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Help Santa Deliver Cheer This Year!",
+          "msvalidate.01": "ADCD440DA89A6128B059312B0A24BEE9",
+          "twitter:url": "https://www.uspsoperationsanta.com/",
+          "og:title": "Help Santa Deliver Cheer This Year!",
+          "pinterest": "nopin",
+          "og:image:type": "image/png",
+          "og:description": "Santa receives more letters than he can answer. You can help! Adopt a letter today and fulfill someone\u2019s holiday wish with USPS Operation Santa®.",
+          "twitter:image": "https://www.uspsoperationsanta.com/images/OpSanta_2019_TweetLink.png",
+          "viewport": "width=device-width",
+          "twitter:description": "Santa receives more letters than he can answer. You can help! Adopt a letter today and fulfill someone\u2019s holiday wish with USPS Operation Santa®.",
+          "og:url": "https://www.uspsoperationsanta.com/"
+        }],
+        "cse_image": [{"src": "https://www.uspsoperationsanta.com/images/OpSanta_2019_Facebook_SharedLink.png"}]
+      },
+      "displayLink": "www.uspsoperationsanta.com",
+      "link": "https://www.uspsoperationsanta.com/",
+      "htmlSnippet": "Adopt a child&#39;s letter to <b>Santa<\/b> this holiday season with USPS Operation <b>Santa<\/b>®. Spread holiday cheer and help make a child&#39;s holiday wish come true.",
+      "title": "USPS Operation Santa® | USPS",
+      "formattedUrl": "https://www.uspsoperationsanta.com/",
+      "cacheId": "HMYTf69JU_EJ"
+    },
+    {
+      "snippet": "Welcome to the Santa Monica Pier! Jutting out into the Pacific Ocean at the intersection of Ocean and Colorado, it symbolizes the heart of ...",
+      "htmlFormattedUrl": "https://www.<b>santa<\/b>monicapier.org/",
+      "htmlTitle": "<b>Santa<\/b> Monica Pier",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0o4sz4B7T1g8inzZt09PH-mE_H6Y5kJIEqJeOS7soaPV3Ft904URs24Q",
+          "width": "290",
+          "height": "174"
+        }],
+        "metatags": [{
+          "og:image": "http://static1.squarespace.com/static/5e0e65adcd39ed279a0402fd/t/5e13c6deafc2a85e5be815fd/1578354400125/SMP_logo-white.png?format=1500w",
+          "og:type": "website",
+          "og:image:width": "1500",
+          "twitter:title": "Santa Monica Pier",
+          "twitter:card": "summary",
+          "og:site_name": "Santa Monica Pier",
+          "viewport": "initial-scale=1",
+          "twitter:url": "https://www.santamonicapier.org",
+          "og:title": "Santa Monica Pier",
+          "og:image:height": "900",
+          "og:url": "https://www.santamonicapier.org",
+          "twitter:image": "http://static1.squarespace.com/static/5e0e65adcd39ed279a0402fd/t/5e13c6deafc2a85e5be815fd/1578354400125/SMP_logo-white.png?format=1500w"
+        }],
+        "cse_image": [{"src": "http://static1.squarespace.com/static/5e0e65adcd39ed279a0402fd/t/5e13c6deafc2a85e5be815fd/1578354400125/SMP_logo-white.png?format=1500w"}]
+      },
+      "displayLink": "www.santamonicapier.org",
+      "link": "https://www.santamonicapier.org/",
+      "htmlSnippet": "Welcome to the <b>Santa<\/b> Monica Pier! Jutting out into the Pacific Ocean at the intersection of Ocean and Colorado, it symbolizes the heart of&nbsp;...",
+      "title": "Santa Monica Pier",
+      "formattedUrl": "https://www.santamonicapier.org/",
+      "cacheId": "BknJqJStJ-oJ"
+    },
+    {
+      "snippet": "Explore Santa.com. IdeasGift GuidesShopDownloads. Account. Create AccountSign InWish ListsFAQReturn Policy. Kids. North PoleWish Shop ...",
+      "htmlFormattedUrl": "https://www.<b>santa<\/b>.com/",
+      "htmlTitle": "<b>SANTA<\/b>.COM",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQruOliG_Nd6VgY_t275sQbg2nORTCdslm9woycOgDjI3_f4Q0KO31XTse2",
+          "width": "143",
+          "height": "143"
+        }],
+        "metatags": [{
+          "msapplication-tilecolor": "#ffc40d",
+          "next-head-count": "23",
+          "theme-color": "#ffffff",
+          "viewport": "initial-scale=1.0, width=device-width",
+          "msapplication-tileimage": "/ms-icon-144x144.png"
+        }],
+        "cse_image": [{"src": "https://www.santa.com/assets/svgs/red-white-circular-spinner.svg"}]
+      },
+      "displayLink": "www.santa.com",
+      "link": "https://www.santa.com/",
+      "htmlSnippet": "Explore <b>Santa<\/b>.com. IdeasGift GuidesShopDownloads. Account. Create AccountSign InWish ListsFAQReturn Policy. Kids. North PoleWish Shop&nbsp;...",
+      "title": "SANTA.COM",
+      "formattedUrl": "https://www.santa.com/",
+      "cacheId": "pYYMVDn5wGkJ"
+    },
+    {
+      "snippet": "Santa Anita Park, now in the palm of your hand. Get information on events and concerts, live odds, promotions, video, and more.",
+      "htmlFormattedUrl": "https://www.<b>santa<\/b>anita.com/",
+      "htmlTitle": "<b>Santa<\/b> Anita Park: Home",
+      "kind": "customsearch#result",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGbHFc18HDdVTVnpcIk9SSurjSId_AcQPAZ_Uuc-eB_8Tkw7TQMhjM28kQ",
+          "width": "300",
+          "height": "168"
+        }],
+        "metatags": [{
+          "og:type": "website",
+          "twitter:card": "summary",
+          "twitter:title": "Home",
+          "theme-color": "#03f3b2",
+          "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+          "twitter:description": "Santa Anita Park, now in the palm of your hand. Get information on events and concerts, live odds, promotions, video, and more.",
+          "og:title": "Home",
+          "og:description": "Santa Anita Park, now in the palm of your hand. Get information on events and concerts, live odds, promotions, video, and more.",
+          "twitter:creator": "DeepSleep Studio Miami"
+        }],
+        "cse_image": [{"src": "https://images.ctfassets.net/rkhnw24d6im5/dSf5VunaeT6BcyWjvpS5D/47fc67a753517d8593bc3709bc9e63fa/16x9_no_copy.jpg?w=4000&h=2250&fl=progressive&q=50&fm=jpg"}]
+      },
+      "displayLink": "www.santaanita.com",
+      "link": "https://www.santaanita.com/",
+      "htmlSnippet": "<b>Santa<\/b> Anita Park, now in the palm of your hand. Get information on events and concerts, live odds, promotions, video, and more.",
+      "title": "Santa Anita Park: Home",
+      "formattedUrl": "https://www.santaanita.com/",
+      "cacheId": "9Malp3IWcZAJ"
+    }
+  ],
+  "url": {
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json",
+    "type": "application/json"
+  }
+}
